@@ -1,0 +1,7 @@
+$t = [System.IO.File]::ReadAllText('C:\Users\kooro\Downloads\viziadigital.github.io-main\studio.html', [System.Text.Encoding]::UTF8)
+Write-Host "slider: " ($t -match 'studio-team-slider')
+Write-Host "viewport: " ($t -match 'studio-team-viewport')
+Write-Host "track: " ($t -match 'studio-team-track')
+Write-Host "stm-prev: " ($t -match 'stm-prev')
+Write-Host "stm-next: " ($t -match 'stm-next')
+Write-Host "JS: " ($t -match 'offsetWidth')
